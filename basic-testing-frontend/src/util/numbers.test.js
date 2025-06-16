@@ -54,6 +54,8 @@ describe('convertToNumber()', () => {
         const cleanedNumbers = cleanNumbers(numbers);
 
         expect(cleanedNumbers[0]).toBeTypeOf('number');
+        //expect(cleanedNumbers).toBe([1, 2, 3, 4]); fails since toBe expect on exactly the same array
+        expect(cleanedNumbers).toStrictEqual([1, 2, 3, 4]);//toEqual - checks values
     });
 
     it('should throw an error if an array with at least one empty string is provided', () => {
