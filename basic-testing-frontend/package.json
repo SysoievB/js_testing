@@ -4,14 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "vitest --run --reporter verbose",
+    "test": "vitest",
+    "test:run": "vitest --run --reporter verbose",
     "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
     "start": "http-server -c-1"
   },
   "keywords": [],
   "author": "Maximilian Schwarzmüller",
   "license": "ISC",
   "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.3",
     "http-server": "^14.1.0",
     "install": "^0.13.0",
     "npm": "8.11.0",
