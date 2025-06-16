@@ -54,5 +54,13 @@ describe('convertToNumber()', () => {
         const cleanedNumbers = cleanNumbers(numbers);
 
         expect(cleanedNumbers[0]).toBeTypeOf('number');
+    });
+
+    it('should throw an error if an array with at least one empty string is provided', () => {
+        const numbers = ['', '2', '3', '4'];
+
+        const cleanFn = () => cleanNumbers(numbers);
+
+        expect(cleanFn).toThrow();
     })
 });
