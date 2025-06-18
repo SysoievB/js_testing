@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "happy-dom": "15.10.2",
+    "jsdom": "^26.1.0",
     "vitest": "^0.9.3"
   }
 }
